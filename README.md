@@ -1,7 +1,6 @@
 # Gameplay-NLW
 
 ## Sobre o projeto
-Este aplicativo está sendopara lhe ajudar a conectar-se e organiza o momento de diversão e jogar com os amigos. Crie grupos para jogar seus games favoritos com seus amigos com esse App que possui autenticação com Discord.
 Este aplicativo foi criado durante a semana NLW 06 da Rocketseat, ele serve para ajudar a conectar-se e organiza o momento de diversão e jogar com os amigos. Crie grupos para jogar seus games favoritos com seus amigos com esse App que possui autenticação com Discord.
 
 ## Layout do projeto
