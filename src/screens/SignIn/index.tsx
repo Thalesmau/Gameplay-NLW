@@ -7,18 +7,18 @@ import {
   ActivityIndicator
 } from 'react-native';
 
-import { useAuth } from '../../hooks/auth';
-
 import IllustrationImg from '../../assets/illustration.png';
 import { theme } from '../../global/styles/theme';
 import { styles } from './styles';
 
 import { ButtonIcon } from '../../components/ButtonIcon';
 import { Background } from '../../components/Background';
+import { useAuth } from '../../hooks/auth';
 
 export function SignIn() {
-  const { loading, signIn } = useAuth();
 
+  const { user, signIn } = useAuth();
+  
   async function handleSignIn() {
     try {
       await signIn();
@@ -48,13 +48,13 @@ export function SignIn() {
             favoritos com seus amigos
           </Text>
 
-          {
-            loading ? <ActivityIndicator color={theme.colors.primary} /> :
+          {/* {
+            loading ? <ActivityIndicator color={theme.colors.primary} /> :} */}
               <ButtonIcon
                 title="Entrar com Discord"
                 onPress={handleSignIn}
               />
-          }
+          
         </View>
       </View>
     </Background>
